@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Time!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">SURVEY TIME!</h1>
+    <p id="description">We'd love for you to fill out the below so we can get to know you more.</p>
+    <form id="survey-form">
+       <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Insert full name" required /></label>
+
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Insert email" required /></label>
+
+        <label for="number" id="number-label">Number: <input id="number" name="number" type="number" min="8" max="1000" placeholder="Insert best contact #" required></label>
+  </fieldset>
+
+  <fieldset>
+    <label for="dropdown">How did you hear about us?
+    <select id="dropdown" name="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Google</option>
+      <option value="2">Facebook</option>
+      <option value="3">Word of Mouth</option>
+      <option value="4">Other</option>
+          </select>
+  </fieldset>
+
+  <fieldset>
+
+    <label for="age-below">How old are you?<input id="age-below" type="radio" value="age-below" name="account-type" class="inline" />Under 18</label>
+        <label for="age-above"><input id="age-above" type="radio" value="age-above" name="account-type" class="inline" />Over 18</label>
+  </fieldset>
+
+    <fieldset>
+    <label for="wine" name="wine">What type of wine do you like? Feel free to pick more than one if your tastebuds allow. 
+      <input id="sparkling-wine" type="checkbox" value="checkbox" required name="sparkling-wine" class="inline" />Sparkling</a>
+          <input id="white-wine" type="checkbox" value="checkbox" required name="white-wine" class="inline" />White Wine</a>
+          <input id="rose-wine" type="checkbox" value="checkbox" required name="rose-wine" class="inline" />Rose</a>
+          <input id="red-wine" type="checkbox" value="checkbox" required name="red-wine" class="inline" />Red Wine</a>
+        </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="bio">Feedback is one of our favourite things. Is there anything you'd like to share before we part?
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I am strong, independent woman"></textarea>
+        </label>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
